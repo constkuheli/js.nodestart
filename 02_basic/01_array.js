@@ -24,11 +24,17 @@ const newArr = myArr.join()// use for converting all the value in string
 console.log(myArr);
 console.log(newArr);
 
+
+console.log("  ");
 //slice, splice
 
-console.log("A ", myArr);
+console.log("A", myArr);
 
-const myn1 = myArr.slice(1,3)
-
+const myn1 = myArr.slice(1,3)//start and previous of end is included
 console.log(myn1);
-console.log("B ", myArr);
+console.log("B",myArr);
+
+console.log("splice work on that way");
+const myn2 = myArr.splice(1,3)//start and bnd both are included
+console.log(myn2);
+console.log("C", myArr);//after opration on splice the main array in also change
